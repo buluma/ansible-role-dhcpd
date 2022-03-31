@@ -14,8 +14,8 @@ lint: |
 driver:
   name: docker
 platforms:
-  - name: "dhcpd-${image:-fedora-systemd}-${tag:-latest}${TOX_ENVNAME}"
-    image: "${namespace:-buluma}/${image:-fedora-systemd}:${tag:-latest}"
+  - name: "dhcpd-${image:-docker-ubuntu2004-ansible}-${tag:-latest}${TOX_ENVNAME}"
+    image: "${namespace:-buluma}/${image:-docker-ubuntu2004-ansible}:${tag:-latest}"
     command: /sbin/init
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro

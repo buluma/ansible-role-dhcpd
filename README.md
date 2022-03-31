@@ -2,9 +2,9 @@
 
 Install and configure dhcpd on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-dhcpd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-dhcpd/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-dhcpd/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-dhcpd)|[![quality](https://img.shields.io/ansible/quality/58372)](https://galaxy.ansible.com/buluma/dhcpd)|[![downloads](https://img.shields.io/ansible/role/d/58372)](https://galaxy.ansible.com/buluma/dhcpd)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-dhcpd.svg)](https://github.com/buluma/ansible-role-dhcpd/releases/)|
+|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|---------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-dhcpd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-dhcpd/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-dhcpd/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-dhcpd)|[![quality](https://img.shields.io/ansible/quality/58372)](https://galaxy.ansible.com/buluma/dhcpd)|[![downloads](https://img.shields.io/ansible/role/d/58372)](https://galaxy.ansible.com/buluma/dhcpd)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-dhcpd.svg)](https://github.com/buluma/ansible-role-dhcpd/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-dhcpd.svg)](https://github.com/buluma/ansible-role-dhcpd/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-dhcpd.svg)](https://github.com/buluma/ansible-role-dhcpd/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -85,7 +85,7 @@ The following roles are used to prepare a system. You can prepare your system in
 | Requirement | GitHub | GitLab |
 |-------------|--------|--------|
 |[buluma.apt_autostart](https://galaxy.ansible.com/buluma/apt_autostart)|[![Build Status GitHub](https://github.com/buluma/ansible-role-apt_autostart/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-apt_autostart/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-apt_autostart/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-apt_autostart)|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-bootstrap)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-bootstrap/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-bootstrap)|
 |[buluma.core_dependencies](https://galaxy.ansible.com/buluma/core_dependencies)|[![Build Status GitHub](https://github.com/buluma/ansible-role-core_dependencies/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-core_dependencies/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-core_dependencies/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-core_dependencies)|
 
 ## [Context](#context)
