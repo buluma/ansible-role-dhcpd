@@ -4,8 +4,13 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-dhcpd/compare/0.1.0...HEAD)
 
+**Implemented enhancements:**
+
+- test stop dhcpd [\#3](https://github.com/buluma/ansible-role-dhcpd/pull/3) ([buluma](https://github.com/buluma))
+
 **Merged pull requests:**
 
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.4 to 1.0.5 [\#4](https://github.com/buluma/ansible-role-dhcpd/pull/4) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.3 to 1.0.4 [\#2](https://github.com/buluma/ansible-role-dhcpd/pull/2) ([dependabot[bot]](https://github.com/apps/dependabot))
 - badges update [\#1](https://github.com/buluma/ansible-role-dhcpd/pull/1) ([buluma](https://github.com/buluma))
 
