@@ -1,10 +1,10 @@
-# [Ansible role dhcpd](#dhcpd)
+# Ansible role [dhcpd](https://galaxy.ansible.com/ui/standalone/roles/buluma/dhcpd/documentation)
 
 Install and configure dhcpd on your system.
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-dhcpd/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-dhcpd/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-dhcpd.svg)](https://github.com/buluma/ansible-role-dhcpd/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-dhcpd.svg)](https://github.com/buluma/ansible-role-dhcpd/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-dhcpd.svg)](https://github.com/buluma/ansible-role-dhcpd/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-dhcpd/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-dhcpd/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-dhcpd.svg)](https://github.com/buluma/ansible-role-dhcpd/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-dhcpd.svg)](https://github.com/buluma/ansible-role-dhcpd/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-dhcpd.svg)](https://github.com/buluma/ansible-role-dhcpd/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/dhcpd)](https://galaxy.ansible.com/ui/standalone/roles/buluma/dhcpd/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
