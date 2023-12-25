@@ -2,7 +2,17 @@
 
 ## [Unreleased](https://github.com/buluma/ansible-role-dhcpd/tree/HEAD)
 
-[Full Changelog](https://github.com/buluma/ansible-role-dhcpd/compare/0.1.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-dhcpd/compare/0.1.1...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#14](https://github.com/buluma/ansible-role-dhcpd/issues/14)
+- Update action [\#13](https://github.com/buluma/ansible-role-dhcpd/issues/13)
+- rebuild action [\#12](https://github.com/buluma/ansible-role-dhcpd/issues/12)
+
+## [0.1.1](https://github.com/buluma/ansible-role-dhcpd/tree/0.1.1) (2023-12-24)
+
+[Full Changelog](https://github.com/buluma/ansible-role-dhcpd/compare/0.1.0...0.1.1)
 
 **Implemented enhancements:**
 
