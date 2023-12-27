@@ -10,6 +10,10 @@
 - Update action [\#13](https://github.com/buluma/ansible-role-dhcpd/issues/13)
 - rebuild action [\#12](https://github.com/buluma/ansible-role-dhcpd/issues/12)
 
+**Merged pull requests:**
+
+- Bump buluma/molecule-action from 4.0.7 to 6.0.0 [\#18](https://github.com/buluma/ansible-role-dhcpd/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [0.1.1](https://github.com/buluma/ansible-role-dhcpd/tree/0.1.1) (2023-12-24)
 
 [Full Changelog](https://github.com/buluma/ansible-role-dhcpd/compare/0.1.0...0.1.1)
