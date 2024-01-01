@@ -18,7 +18,7 @@ on:
       - '*'
   pull_request:
   schedule:
-    - cron: '7 4 * * *'
+    - cron: '7 4 4 * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -64,7 +64,7 @@ jobs:
           - image: "docker-ubuntu-systemd"
             tag: "focal"
           - image: "docker-ubuntu-systemd"
-            tag: "bionic"
+            tag: "lunar"
     steps:
       - name: checkout
         uses: actions/checkout@v4
