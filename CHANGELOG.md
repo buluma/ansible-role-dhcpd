@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-dhcpd/tree/HEAD)
+## [0.1.3](https://github.com/buluma/ansible-role-dhcpd/tree/0.1.3) (2024-01-02)
 
-[Full Changelog](https://github.com/buluma/ansible-role-dhcpd/compare/0.1.2...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-dhcpd/compare/0.1.2...0.1.3)
 
 **Merged pull requests:**
 
