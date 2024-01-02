@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-dhcpd/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-dhcpd/compare/0.1.2...HEAD)
+
+**Merged pull requests:**
+
+- Bump actions/checkout from 3 to 4 [\#20](https://github.com/buluma/ansible-role-dhcpd/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [0.1.2](https://github.com/buluma/ansible-role-dhcpd/tree/0.1.2) (2023-12-28)
 
 [Full Changelog](https://github.com/buluma/ansible-role-dhcpd/compare/0.1.1...0.1.2)
