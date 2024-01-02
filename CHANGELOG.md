@@ -7,6 +7,7 @@
 **Merged pull requests:**
 
 - Bump actions/checkout from 3 to 4 [\#20](https://github.com/buluma/ansible-role-dhcpd/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.5 to 1.0.8 [\#16](https://github.com/buluma/ansible-role-dhcpd/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [0.1.2](https://github.com/buluma/ansible-role-dhcpd/tree/0.1.2) (2023-12-28)
 
