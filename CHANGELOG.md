@@ -6,7 +6,6 @@
 
 **Merged pull requests:**
 
-- Bump buluma/dependabot-auto-merge-action from 2.1.1 to 2.1.2 [\#25](https://github.com/buluma/ansible-role-dhcpd/pull/25) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#24](https://github.com/buluma/ansible-role-dhcpd/pull/24) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [0.3.0](https://github.com/buluma/ansible-role-dhcpd/tree/0.3.0) (2024-01-20)
@@ -42,6 +41,7 @@
 
 **Merged pull requests:**
 
+- Bump buluma/dependabot-auto-merge-action from 2.1.1 to 2.1.2 [\#25](https://github.com/buluma/ansible-role-dhcpd/pull/25) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/molecule-action from 4.0.7 to 6.0.0 [\#18](https://github.com/buluma/ansible-role-dhcpd/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump actions/checkout from 2 to 4 [\#15](https://github.com/buluma/ansible-role-dhcpd/pull/15) ([dependabot[bot]](https://github.com/apps/dependabot))
 
