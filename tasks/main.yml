@@ -2,8 +2,9 @@
 # tasks file for dhcpd
 
 - name: Import assert.yml
-  ansible.builtin.import_tasks: assert.yml
-  run_once: yes
+  ansible.builtin.import_tasks:
+    file: assert.yml
+  run_once: true
   delegate_to: localhost
 
 - name: Install dhcpd software
@@ -15,20 +16,22 @@
   ansible.builtin.template:
     src: "{{ dhcpd_defaults_src }}"
     dest: "{{ dhcpd_defaults_dest }}"
-    backup: yes
+    backup: true
     mode: "0640"
   when:
     - ansible_os_family == "Debian" or
       ansible_distribution == "openSUSE Leap"
-  notify: Restart dhcpd
+  notify:
+    - Restart dhcpd
 
 - name: Configure software
   ansible.builtin.template:
     src: dhcpd.conf.j2
     dest: "{{ dhcpd_confdir }}/dhcpd.conf"
-    backup: yes
+    backup: true
     mode: "0640"
-  notify: Restart dhcpd
+  notify:
+    - Restart dhcpd
 
 - name: Start and enable software
   block:
@@ -36,7 +39,7 @@
       ansible.builtin.service:
         name: "{{ dhcpd_service }}"
         state: started
-        enabled: yes
+        enabled: true
   rescue:
     - name: Install procps
       ansible.builtin.package:
@@ -46,8 +49,7 @@
     - name: Stop dhcpd
       ansible.builtin.command:
         cmd: pkill dhcpd
-      register: pkill_output
-      changed_when: pkill_output.rc != 0
+        removes: nothing
 
     - name: Remove pid file
       ansible.builtin.file:
@@ -58,4 +60,4 @@
       ansible.builtin.service:
         name: "{{ dhcpd_service }}"
         state: started
-        enabled: yes
+        enabled: true
