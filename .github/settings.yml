@@ -5,4 +5,4 @@
 repository:
   description: Install and configure dhcpd on your system.
   homepage: https://buluma.github.io/
-  topics: dhcp, network, iscdhcpserver, dhcpd, server, networking, system, ansible, molecule, tox, playbook
+  topics: dhcp, network, iscdhcpserver, dhcpd, server, networking, system, ansible, molecule, playbook
