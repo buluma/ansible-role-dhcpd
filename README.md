@@ -106,7 +106,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |container|tags|
 |---------|----|
 |[Alpine](https://hub.docker.com/r/buluma/alpine)|all|
-|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|8, 9|
+|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|all|
 |[Debian](https://hub.docker.com/r/buluma/debian)|all|
 |[Fedora](https://hub.docker.com/r/buluma/fedora)|all|
 |[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|all|
