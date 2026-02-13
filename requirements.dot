@@ -1,0 +1,13 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "dhcpd" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.apt_autostart" [fillcolor=green style=filled]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+    "buluma.core_dependencies" [fillcolor=green style=filled]
+  }
+  "dhcpd" -> "buluma.apt_autostart"
+  "dhcpd" -> "buluma.bootstrap"
+  "dhcpd" -> "buluma.core_dependencies"
+}
