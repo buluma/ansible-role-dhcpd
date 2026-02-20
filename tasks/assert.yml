@@ -1,5 +1,4 @@
 ---
-
 - name: assert | Test dhcpd_ipv4_interface
   ansible.builtin.assert:
     that:
