@@ -1,6 +1,4 @@
 ---
-# handlers file for dhcpd
-
 - name: Restart dhcpd
   ansible.builtin.service:
     name: "{{ dhcpd_service }}"

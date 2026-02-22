@@ -1,10 +1,18 @@
 ---
+dependencies: []
 galaxy_info:
   author: buluma
-  role_name: dhcpd
-  description: "Install and configure dhcpd on your system."
-  license: Apache-2.0
   company: ShadowNet
+  description: Install and configure dhcpd on your system.
+  galaxy_tags:
+    - dhcp
+    - network
+    - iscdhcpserver
+    - dhcpd
+    - server
+    - networking
+    - system
+  license: Apache-2.0
   min_ansible_version: "2.12"
   platforms:
     - name: Alpine
@@ -22,12 +30,4 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
-  galaxy_tags:
-    - dhcp
-    - network
-    - iscdhcpserver
-    - dhcpd
-    - server
-    - networking
-    - system
-dependencies: []
+  role_name: dhcpd

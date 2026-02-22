@@ -11,34 +11,29 @@ Install and configure dhcpd on your system.
 This example is taken from [`molecule/default/converge.yml`](https://github.com/buluma/ansible-role-dhcpd/blob/master/molecule/default/converge.yml) and is tested on each push, pull request and release.
 
 ```yaml
----
-- name: Converge
-  hosts: all
-  become: true
+- become: true
   gather_facts: true
-
+  hosts: all
+  name: Converge
+  roles:
+  - role: buluma.dhcpd
   vars:
     dhcpd_subnets:
-      - network: "{{ ansible_default_ipv4.network }}"
-        netmask: "255.255.255.0"
-
-  roles:
-    - role: buluma.dhcpd
+    - netmask: 255.255.255.0
+      network: '{{ ansible_default_ipv4.network }}'
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-dhcpd/blob/master/molecule/default/prepare.yml):
 
 ```yaml
----
-- name: Prepare
-  hosts: all
+- become: true
   gather_facts: false
-  become: true
-
+  hosts: all
+  name: Prepare
   roles:
-    - role: buluma.bootstrap
-    - role: buluma.apt_autostart
-    - role: buluma.core_dependencies
+  - role: buluma.bootstrap
+  - role: buluma.apt_autostart
+  - role: buluma.core_dependencies
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -48,34 +43,23 @@ Also see a [full explanation and example](https://buluma.github.io/how-to-use-th
 The default values for the variables are set in [`defaults/main.yml`](https://github.com/buluma/ansible-role-dhcpd/blob/master/defaults/main.yml):
 
 ```yaml
----
-# defaults file for dhcpd
-
-# Configuration settings for the daemon.
-dhcpd_ipv4_interface: "{{ ansible_default_ipv4.interface | default('eth0') }}"
-
-# Setting applicable for the global scope.
+dhcpd_broadcast_address: 10.0.2.255
 dhcpd_default_lease_time: 600
-dhcpd_max_lease_time: 7200
-dhcpd_subnet_mask: "255.255.255.0"
-dhcpd_broadcast_address: "10.0.2.255"
-dhcpd_routers: "10.0.2.254"
 dhcpd_domain_name_servers:
-  - "192.168.1.1"
-  - "192.168.1.2"
+- 192.168.1.1
+- 192.168.1.2
 dhcpd_domain_search: example.com
-
-# The image to serve for PXE booting.
-dhcpd_filename: "pxelinux.0"
-# Where the image can be downloaded from.
-dhcpd_next_server: "10.0.2.254"
-
-# DHCP works with subnets, a list containing properties per subnet.
+dhcpd_filename: pxelinux.0
+dhcpd_ipv4_interface: '{{ ansible_default_ipv4.interface | default(''eth0'') }}'
+dhcpd_max_lease_time: 7200
+dhcpd_next_server: 10.0.2.254
+dhcpd_routers: 10.0.2.254
+dhcpd_subnet_mask: 255.255.255.0
 dhcpd_subnets:
-  - network: "10.0.2.0"
-    netmask: "255.255.255.0"
-    range_start: "10.0.2.200"
-    range_end: "10.0.2.210"
+- netmask: 255.255.255.0
+  network: 10.0.2.0
+  range_end: 10.0.2.210
+  range_start: 10.0.2.200
 ```
 
 ## [Requirements](#requirements)
