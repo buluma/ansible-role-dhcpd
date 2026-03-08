@@ -46,7 +46,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 
 ```yaml
 ---
-dhcpd_broadcast_address: 10.0.2.255
+dhcpd_broadcast_address: "10.0.2.255"
 dhcpd_default_lease_time: 600
 dhcpd_domain_name_servers:
   - 192.168.1.1
@@ -55,9 +55,9 @@ dhcpd_domain_search: example.com
 dhcpd_filename: pxelinux.0
 dhcpd_ipv4_interface: "{{ ansible_default_ipv4.interface | default('eth0') }}"
 dhcpd_max_lease_time: 7200
-dhcpd_next_server: 10.0.2.254
-dhcpd_routers: 10.0.2.254
-dhcpd_subnet_mask: 255.255.255.0
+dhcpd_next_server: "10.0.2.254"
+dhcpd_routers: "10.0.2.254"
+dhcpd_subnet_mask: "255.255.255.0"
 dhcpd_subnets:
   - netmask: 255.255.255.0
     network: 10.0.2.0
@@ -114,3 +114,4 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [buluma](https://buluma.github.io/)
+
