@@ -4,8 +4,8 @@
   hosts: all
   name: Converge
   roles:
-  - role: buluma.dhcpd
+    - role: buluma.dhcpd
   vars:
     dhcpd_subnets:
-    - netmask: 255.255.255.0
-      network: '{{ ansible_default_ipv4.network }}'
+      - netmask: 255.255.255.0
+        network: "{{ ansible_default_ipv4.network }}"
