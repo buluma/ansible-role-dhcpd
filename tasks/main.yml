@@ -14,18 +14,18 @@
     dest: "{{ dhcpd_defaults_dest }}"
     mode: "0640"
     src: "{{ dhcpd_defaults_src }}"
-  notify:
-    - Restart dhcpd
+  notify: Restart dhcpd
   when:
     - ansible_os_family == "Debian" or ansible_distribution == "openSUSE Leap"
+
 - name: Configure software
   ansible.builtin.template:
     backup: true
     dest: "{{ dhcpd_confdir }}/dhcpd.conf"
     mode: "0640"
     src: dhcpd.conf.j2
-  notify:
-    - Restart dhcpd
+  notify: Restart dhcpd
+
 - name: Start and enable software
   block:
     - name: Start and enable software
