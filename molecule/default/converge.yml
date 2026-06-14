@@ -8,4 +8,4 @@
   vars:
     dhcpd_subnets:
       - netmask: 255.255.255.0
-        network: "{{ ansible_facts.default_ipv4.network }}"
+        network: "{{ ansible_facts['default_ipv4'].network }}"
