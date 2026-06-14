@@ -16,7 +16,7 @@
     src: "{{ dhcpd_defaults_src }}"
   notify: Restart dhcpd
   when:
-    - ansible_os_family == "Debian" or ansible_distribution == "openSUSE Leap"
+    - ansible_facts.os_family == "Debian" or ansible_facts.distribution == "openSUSE Leap"
 
 - name: Configure software
   ansible.builtin.template:
