@@ -6,7 +6,7 @@ dhcpd_domain_name_servers:
   - 192.168.1.2
 dhcpd_domain_search: example.com
 dhcpd_filename: pxelinux.0
-dhcpd_ipv4_interface: "{{ ansible_default_ipv4.interface | default('eth0') }}"
+dhcpd_ipv4_interface: "{{ ansible_facts['default_ipv4'].interface | default('eth0') }}"
 dhcpd_max_lease_time: 7200
 dhcpd_next_server: "10.0.2.254"
 dhcpd_routers: "10.0.2.254"
