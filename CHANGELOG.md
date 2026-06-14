@@ -1,5 +1,15 @@
 # Changelog
 
+## [26.6.0](https://github.com/buluma/ansible-role-dhcpd/tree/26.6.0) (2026-06-14)
+
+[Full Changelog](https://github.com/buluma/ansible-role-dhcpd/compare/24.3.31...26.6.0)
+
+**Merged pull requests:**
+
+- Bump docker/setup-buildx-action from 3 to 4 [\#33](https://github.com/buluma/ansible-role-dhcpd/pull/33) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ansible/ansible-lint from 26.1.1 to 26.2.0 [\#32](https://github.com/buluma/ansible-role-dhcpd/pull/32) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 4 to 6 [\#30](https://github.com/buluma/ansible-role-dhcpd/pull/30) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [24.3.31](https://github.com/buluma/ansible-role-dhcpd/tree/24.3.31) (2024-03-29)
 
 [Full Changelog](https://github.com/buluma/ansible-role-dhcpd/compare/0.3.0...24.3.31)
