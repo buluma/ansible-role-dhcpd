@@ -27,7 +27,6 @@ _dhcpd_service:
 dhcpd_confdir: "{{ _dhcpd_confdir[ansible_facts['os_family']] | default(_dhcpd_confdir['default']) }}"
 dhcpd_defaults_dest: "{{ _dhcpd_defaults_dest[ansible_facts['os_family']] }}"
 dhcpd_defaults_src: "{{ _dhcpd_defaults_src[ansible_facts['os_family']] }}"
-dhcpd_packages:
-  "{{ _dhcpd_packages[ansible_facts['distribution'] ~ '-' ~ ansible_facts['distribution_major_version']] | default(_dhcpd_packages[ansible_facts['distribution']] | default(_dhcpd_packages[ansible_facts['os_family']]
-  | default(_dhcpd_packages['default'] ))) }}"
+dhcpd_packages: "{{ _dhcpd_packages[ansible_facts['distribution'] ~ '-' ~ ansible_facts['distribution_major_version']] | default(_dhcpd_packages[ansible_facts['distribution']]
+  | default(_dhcpd_packages[ansible_facts['os_family']] | default(_dhcpd_packages['default'] ))) }}"
 dhcpd_service: "{{ _dhcpd_service[ansible_facts['os_family']] | default(_dhcpd_service['default']) }}"
