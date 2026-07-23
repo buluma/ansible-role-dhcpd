@@ -4,7 +4,9 @@
 platforms:
   - name: EL
     versions:
-      - "10"
+      # Excludes 10: it dropped legacy ISC dhcp-server entirely in favor
+      # of Kea DHCP server (different package, different JSON config
+      # format vs this role's dhcpd.conf templates).
       - "9"
   - name: Debian
     versions:
